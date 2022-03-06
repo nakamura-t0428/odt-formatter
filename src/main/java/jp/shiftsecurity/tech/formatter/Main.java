@@ -21,7 +21,7 @@ public class Main {
 
             JavaScriptTemplate template = new JavaScriptTemplate(odtPath);
             ODSingleXMLDocument doc = formatter.format(template);
-            doc.saveAs(new File(outPath));
+            doc.saveToPackageAs(new File(outPath));
         } catch (Exception e) {
             e.printStackTrace(System.err);
         }
